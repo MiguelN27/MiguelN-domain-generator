@@ -7,12 +7,15 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
 
-  const colors = ["Black", "Red", "White", "Green", "Pink"];
-  const animals = ["Wolf", "Chicken", "Panther", "Crocodile"];
+  const pronoun = ["the", "our"];
+  const adj = ["great", "big"];
+  const noun = ["jogger", "racoon"];
 
-  for (let colorIndex = 0; colorIndex < colors.length; colorIndex++){
-      for (let animalIndex = 0; animalIndex < animals.length; animalIndex++){
-        console.log(colors[colorIndex] + " " + animals[animalIndex]);
+  for (let pronounIndex = 0; pronounIndex < pronoun.length; pronounIndex++){
+      for (let adjIndex = 0; adjIndex < adj.length; adjIndex++){
+        for (let nounIndex = 0; nounIndex < noun.length; nounIndex++){
+          console.log(pronoun[pronounIndex] + adj[adjIndex] + noun[nounIndex] + ".com")
+        }
       }
   }
 
